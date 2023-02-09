@@ -16,6 +16,20 @@ public class App {
         carReference.damaged = true;
         carReference.doorCount = 2;
         carReference.color = "red";
+
+        Engine engine1=new Engine();
+        engine1.manufacterer="Ferrari";
+        engine1.capacity=3000;
+        carReference.engine=engine1;
+        System.out.println("Engine1 capacity:"+engine1.capacity);
+        System.out.println("Car engine capacity:"+carReference.engine.capacity);
+
+        engine1.capacity=4000;
+
+        System.out.println("Car engine capacity"+carReference.engine.capacity);
+
+
+        carReference.engine=engine1;
         //concatenare
         System.out.println("Proprietatiile unei masini (Properties of car) " + carReference.name);
         System.out.println("Max Speed :" + carReference.maxSpeed);
@@ -32,6 +46,10 @@ public class App {
         car2.name = "ford";
         car2.fuelLevel = 85;
         car2.totalTravelDistance = 165;
+        Engine engine2=new Engine();
+        engine2.capacity=4500;
+        carReference.engine=engine2;
+        System.out.println("Motorul masinii doi are puterea de : "+carReference.engine.capacity);
         System.out.println("Proprietatiile unei masini (Properties of car) " + car2.name);
         System.out.println("Max Speed :" + car2.maxSpeed);
         System.out.println("Fuel Level : " + car2.fuelLevel);

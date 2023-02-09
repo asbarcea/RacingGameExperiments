@@ -12,4 +12,7 @@ public class Car {
         int doorCount;
         boolean damaged;
         String color;
+        // are o relatie(aggregation)
+        Engine engine;
+
     }
