@@ -1,17 +1,11 @@
 package org.example;
 
-public class Car {
+public class Car  extends Autovehicle {
+    //is-a  relationship (inheritance=mostenire)
 
 //instance variables
 
-        String name;
-        double fuelLevel;
-        double mileage;
-        double totalTravelDistance;
-        double maxSpeed;
         int doorCount;
-        boolean damaged;
-        String color;
         // are o relatie(aggregation)
         Engine engine;
 
